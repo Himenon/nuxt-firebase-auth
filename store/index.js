@@ -31,7 +31,7 @@ const createStore = () => {
       signOut ({commit}) {
         auth.signOut().then(() => {
           commit('setUser', null)
-        }).catch(err => console.log(error))
+        }).catch(error => console.log(error))
       }
     }
   })
