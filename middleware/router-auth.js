@@ -1,5 +1,4 @@
 export default function ({ store, redirect, route }) {
-  console.log('router-auth.js')
   store.state.user != null && route.name === 'login' ? redirect('/admin') : ''
   store.state.user == null && isAdminRoute(route) ? redirect('/login') : ''
 }

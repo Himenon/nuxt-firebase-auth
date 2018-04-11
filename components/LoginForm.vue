@@ -30,7 +30,7 @@ export default {
       })
     },
     googleSignUp () {
-      this.$store.dispatch('signInWithGoogle').then(() => {
+      this.$store.dispatch('account/signInWithGoogle').then(() => {
         console.log('inside then statement on login');
       }).catch((e) => {
         console.log(e.message);
