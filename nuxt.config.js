@@ -31,7 +31,7 @@ module.exports = {
     }
   },
   modules: [
-    '@nuxtjs/pwa'
+    // '@nuxtjs/pwa',
   ],
   router: {
     middleware: 'router-auth'
